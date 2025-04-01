@@ -1,1 +1,10 @@
-@import 'tailwindcss'
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F4F4F1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
