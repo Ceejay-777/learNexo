@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="w-screen px-16 py-12 bg-white">
       <div className="border flex gap-24">
-        <h2 className="text-[64px] font-semibold w-full leading-tight mt-12">
+        <h2 className="text-[64px] font-semibold w-full leading-tight mt-12 text-center">
           About us
         </h2>
         <div className="max-w-[655px]">
@@ -27,12 +27,20 @@ const About = () => {
         </div>
       </div>
       <div className="border">
-        <div className="h-[420px] flex gap-10">
-          <Metric perc={90} info="Sustainability" />
-          <Metric perc={50} info="Customer’s Satisfaction" />
-          <Metric perc={50} info="Our Services" />
-          <Metric perc={50} info="Improved Grades" />
-          <Metric perc={50} info="Improved WAEC Results" />
+        <div className="h-[420px] flex gap-10 items-end border">
+          <Metric perc={90} />
+          <Metric perc={95} />
+          <Metric perc={78} />
+          <Metric perc={72} />
+          <Metric perc={69} />
+        </div>
+
+        <div className="flex gap-10 justify-center text-xl text-[#808080] text-center">
+          <p className="w-1/5">Sustanability</p>
+          <p className="w-1/5">Customer&apos;s Satisfaction</p>
+          <p className="w-1/5">Our Services</p>
+          <p className="w-1/5">Improved Grades</p>
+          <p className="w-1/5">Improved WAEC Results</p>
         </div>
       </div>
     </section>
