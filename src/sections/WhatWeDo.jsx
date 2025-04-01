@@ -26,7 +26,7 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="mb-16 flex flex-col justify-center items-center ">
+    <section className="mb-24 flex flex-col justify-center items-center ">
       <h2 className="font-extrabold text-[50px] text-center mb-12">WHAT DO WE DO?</h2>
 
           <ul>

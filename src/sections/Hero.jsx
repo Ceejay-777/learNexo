@@ -6,7 +6,7 @@ import heroImage from "../assets/hero image.png";
 
 const Hero = () => {
   return (
-    <section className="text-center flex flex-col justify-center items-center mb-12" id="hero">
+    <section className="text-center flex flex-col justify-center items-center mb-24" id="hero">
       <Header />
       <div className="max-w-[1024px] mx-auto py-8 flex flex-col items-center">
         <h1 className="font-semibold text-[56px] leading-[3.5rem] mb-4">
