@@ -26,19 +26,21 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="mb-24 flex flex-col justify-center items-center ">
-      <h2 className="font-extrabold text-[50px] text-center mb-12">WHAT DO WE DO?</h2>
+    <section className="mb-24 flex flex-col justify-center items-center  px-16 py-12">
+      <h2 className="font-extrabold text-[50px] text-center mb-12">
+        WHAT DO WE DO?
+      </h2>
 
-          <ul>
-            {data.map((item) => (
-              <WeDo
-                key={item.index}
-                index={item.index}
-                heading={item.heading}
-                info={item.info}
-              />
-            ))}
-          </ul>
+      <ul>
+        {data.map((item) => (
+          <WeDo
+            key={item.index}
+            index={item.index}
+            heading={item.heading}
+            info={item.info}
+          />
+        ))}
+      </ul>
     </section>
   );
 };

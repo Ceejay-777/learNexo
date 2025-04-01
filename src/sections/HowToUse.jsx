@@ -27,7 +27,7 @@ const data = [
 
 const HowToUse = () => {
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center mb-16 px-16 py-12">
       <h2 className="font-extrabold text-[50px] text-center mb-12 max-w-[555px]">
         HOW TO USE LEARNEXO
       </h2>
