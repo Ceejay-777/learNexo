@@ -26,8 +26,11 @@ const data = [
 
 const WhatWeDo = () => {
   return (
-    <section className="mb-24 flex flex-col justify-center items-center  px-16 py-12">
-      <h2 className="font-extrabold text-[50px] text-center mb-12">
+    <section
+      className="md:mb-24 flex flex-col justify-center items-center px-4 md:px-16 py-12"
+      id="services"
+    >
+      <h2 className="font-bold md:font-extrabold text-2xl md:text-4xl lg:text-[50px] text-center mb-12">
         WHAT DO WE DO?
       </h2>
 

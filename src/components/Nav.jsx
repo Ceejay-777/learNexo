@@ -3,23 +3,20 @@ import React from "react";
 const Nav = () => {
   return (
     <nav>
-      <ul className="flex gap-6 font-bold text-[#808080]">
+      <ul className="flex sm:gap-6 gap-3 font-bold text-[#808080] text-xs items-center sm:text-base lg:text-xl">
         <li className="">
-          <a href="#hero">
+          <a href="#home" className="">
             Home
           </a>
         </li>
         <li>
-          <a href="#hero">Our Work</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="#hero">About Us</a>
+          <a href="#howToUse">How to use</a>
         </li>
         <li>
-          <a href="#hero">Projects</a>
-        </li>
-        <li>
-          <a href="#hero">Services</a>
+          <a href="#about">About</a>
         </li>
       </ul>
     </nav>

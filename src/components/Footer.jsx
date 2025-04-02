@@ -9,7 +9,7 @@ import copy from "../assets/copyright.png";
 
 const Footer = () => {
   return (
-    <footer className="px-16 py-12 pb-24 bg-[#01628F] text-white flex gap-12 justify-between items-center">
+    <footer className="px-24 py-12 pb-24 bg-[#01628F] text-white flex gap-12 justify-between items-center">
       <div className="w-1/2 flex flex-col gap-12">
         <h4 className="font-semibold">LEARNEXO</h4>
         <div className="flex items-center gap-12 border p-4 w-fit rounded-xl">
