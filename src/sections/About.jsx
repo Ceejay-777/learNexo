@@ -3,13 +3,13 @@ import Metric from "../components/Metric";
 
 const About = () => {
   return (
-    <section className="w-screen px-16 py-12 bg-white">
+    <section className="w-screen px-16 py-12 pb-24 bg-white">
       <div className="border flex gap-24">
         <h2 className="text-[64px] font-semibold w-full leading-tight mt-12 text-center">
           About us
         </h2>
         <div className="max-w-[655px]">
-          <p className="text-[18px] font-semibold mb-4">
+          <p className="text-[18px] font-semibold">
             At Learnexo, we are passionate about empowering individuals through
             education. Founded in 2025, we have grown from a small startup to a
             trusted global leader in the educational technology space. Our
