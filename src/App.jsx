@@ -6,6 +6,7 @@ import HowToUse from "./sections/HowToUse";
 import About from "./sections/About";
 import Reviews from "./sections/Reviews";
 import GetNotified from "./sections/GetNotified";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Reviews />
       <GetNotified />
+      <Footer />
     </>
   );
 }
