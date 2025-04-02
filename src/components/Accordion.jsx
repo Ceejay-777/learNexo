@@ -8,9 +8,18 @@ const Accordion = ({ question, answer }) => {
   const answerRef = useRef(null);
 
   return (
-    <div onClick={() => setOpen(!open)} className="max-w-[560px] w-full">
-      <div className="flex justify-between items-center gap-12">
-        <p className="text-2xl font-bold">{question}</p>
+    <div
+      onClick={() => setOpen(!open)}
+      className="max-w-[560px] w-full mx-auto"
+    >
+      <div
+        className={`flex justify-between items-center hover:bg-white p-4 rounded-xl ${
+          open && "bg-white"
+        }`}
+      >
+        <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">
+          {question}
+        </p>
         <img
           src={down}
           alt="open"
@@ -28,7 +37,9 @@ const Accordion = ({ question, answer }) => {
         }`}
         ref={answerRef}
       >
-        <div className="p-4 text-2xl">{answer}</div>
+        <div className="p-4 text-sm sm:text-base md:text-xl lg:text-2xl">
+          {answer}
+        </div>
       </div>
     </div>
   );

@@ -20,12 +20,12 @@ const data = [
 
 const Reviews = () => {
   return (
-    <section className="px-16 py-12 pb-24">
-      <h2 className="text-[50px] font-extrabold w-full leading-tight mt-12 text-center mb-2">
+    <section className="px-4 sm:px-8 md:px-16 py-6 md:py-12 pb-6 md:pb-12 lg:pb-24">
+      <h2 className="md:font-extrabold text-2xl md:text-4xl lg:text-[50px] font-bold w-full leading-tight mt-12 text-center mb-6 sm:mb-2">
         CUSTOMERS&apos; REVIEW
       </h2>
 
-      <div className="relative p-12 flex gap-6  mb-16">
+      <div className="relative p-6 sm:p-12 flex gap-6 mb-8  md:mb-16 flex-col sm:flex-row">
         <img src={dots} alt="dots" className="absolute bottom-0 left-0 -z-10" />
         <img src={dots} alt="dots" className="absolute top-0 right-0 -z-10" />
 
@@ -34,13 +34,16 @@ const Reviews = () => {
         ))}
       </div>
 
-      <div className="flex justify-between py-8 pb-12">
-        <h3 className="text-[50px] font-extrabold leading-tight max-w-[540px]">
+      <div className="flex flex-col justify-between py-8 pb-12 md:flex-row">
+        <h3 className="md:font-extrabold text-lg sm:text-2xl md:text-3xl lg:text-[50px] font-bold leading-tight max-w-[540px] mb-6">
           FREQUENTLY ASKED QUESTIONS (FAQs)
         </h3>
 
-        <div className="flex flex-col gap-6 mr-24">
-          <Accordion question="What is my name whatbjbd" answer="Ceejay" />
+        <div className="flex flex-col gap-6 md:mr-12 lg:mr-24">
+          <Accordion
+            question="What is my name whatbjbd"
+            answer="Ceejay hwpofuwefvf ubwufbqub ubwuib ibwbqbueb- webuu uibweb ubwech ibibwqbc ibwibcobcib ibibwc ibiwbdcibiw ibwibcq ibiwbobqjo ibwo ibeicw ibwcic ciewbjdici ibeiie ibibdib"
+          />
           <Accordion question="What is my name" answer="Ceejay" />
           <Accordion question="What is my name" answer="Ceejay" />
           <Accordion question="What is my name" answer="Ceejay" />
