@@ -4,7 +4,7 @@ import Metric from "../components/Metric";
 const About = () => {
   return (
     <section
-      className="w-screen px-4 sm:px-8 md:px-16 py-12 bg-white border"
+      className="w-screen px-4 sm:px-8 md:px-16 py-12 bg-white"
       id="about"
     >
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-24">
