@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import dots from "../assets/dots.png";
 import Review from "../components/Review";
 import Accordion from "../components/Accordion";
@@ -19,6 +19,93 @@ const data = [
 ];
 
 const Reviews = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const faqData = [
+    {
+      index: 1,
+      question: "What is Learnexo?",
+      answer:
+        "Learnexo is an AI-powered personalized learning platform designed to assess students' learning proficiency and provide tailored educational support. It helps students improve their understanding through adaptive assessments, personalized feedback, and targeted learning resources.",
+    },
+    {
+      index: 2,
+      question: "Who can use Learnexo?",
+      answer:
+        "Learnexo is designed for secondary school students, educators, and parents. It provides personalized tests and recommendations to help students strengthen their conceptual understanding in subjects like Mathematics, English, and Problem Solving, e.t.c.",
+    },
+    {
+      index: 3,
+      question: "How does Learnexo personalize learning",
+      answer:
+        "Learnexo uses AI to analyze students’ test performance, identifying their strengths and weaknesses. Based on this analysis, it recommends tailored learning resources and practice questions to help them improve.",
+    },
+    {
+      index: 4,
+      question: "What subjects does Learnexo cover",
+      answer:
+        "Currently, Learnexo focuses on Mathematics, English, and Problem Solving. More subjects may be added in the future.",
+    },
+    {
+      index: 5,
+      question: "How are the assessments structured",
+      answer:
+        "Learnexo assessments are multiple-choice tests designed to evaluate three key aspects: Conceptual Understanding: Testing knowledge of core concepts, Practical Application: Assessing how well students apply knowledge, Speed of Comprehension: Measuring how quickly students grasp new ideas.",
+    },
+    {
+      index: 6,
+      question: "How can I access Learnexo",
+      answer:
+        "Learnexo is accessible via a web platform or mobile app. Users can sign up, take assessments, and receive personalized recommendations.",
+    },
+    {
+      index: 7,
+      question: "Is Learnexo free to use",
+      answer:
+        "Learnexo offer both free and premium features. Basic assessments might be free, while advanced analytics, personalized tutoring, or premium content require a subscription.",
+    },
+    {
+      index: 8,
+      question: "How does Learnexo help educators",
+      answer:
+        "Educators can use Learnexo to track students' progress, identify learning gaps, and customize their teaching methods based on AI-driven insights.",
+    },
+    {
+      index: 9,
+      question: "How can parents benefit from Learnexo",
+      answer:
+        "Parents can monitor their child’s academic performance, receive insights on strengths and weaknesses, and access personalized learning recommendations to support their child's education.",
+    },
+    {
+      index: 10,
+      question: "How secure is my data on Learnexo",
+      answer:
+        "Learnexo follows strict data security protocols to ensure users’ personal information and academic progress remain private and secure.",
+    },
+    {
+      index: 11,
+      question: "How can I get support if I have issues using Learnexo",
+      answer:
+        "If you encounter any issues, you can contact Learnexo’s support team via email or through the Help Center on the platform.",
+    },
+    {
+      index: 12,
+      question: "Can I use Learnexo without an internet connection",
+      answer:
+        "Some features, like taking personalized tests, require an internet connection, but Learnexo offer offline access for downloaded learning materials.",
+    },
+    {
+      index: 13,
+      question: "What subscription plans does Learnexo offer",
+      answer:
+        "Learnexo offers three subscription plans to cater to different learning needs: Solo Plan – Designed for individual students who want personalized learning support. Family Plan – Ideal for families with multiple learners, allowing access for parents and children. School Plan – A comprehensive package for schools, enabling teachers to track student progress and manage learning resources for multiple students.",
+    },
+  ];
+
+  const handleAccordionToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className="px-4 sm:px-6 md:px-8 py-6 md:py-12 pb-6 md:pb-8 lg:pb-12">
       <h2 className="md:font-extrabold text-xl md:text-3xl lg:text-[42px] font-bold w-full leading-tight text-center mb-6 sm:mb-2">
@@ -40,58 +127,15 @@ const Reviews = () => {
         </h3>
 
         <div className="flex flex-col gap-2 md:mr-12 lg:mr-24">
-          <Accordion
-            question="What is Learnexo?"
-            answer="Learnexo is an AI-powered personalized learning platform designed to assess students' learning proficiency and provide tailored educational support. It helps students improve their understanding through adaptive assessments, personalized feedback, and targeted learning resources."
-          />
-          <Accordion
-            question="Who can use Learnexo?"
-            answer="Learnexo is designed for secondary school students, educators, and parents. It provides personalized tests and recommendations to help students strengthen their conceptual understanding in subjects like Mathematics, English, and Problem Solving, e.t.c."
-          />
-          <Accordion
-            question="How does Learnexo personalize learning"
-            answer="Learnexo uses AI to analyze students’ test performance, identifying their strengths and weaknesses. Based on this analysis, it recommends tailored learning resources and practice questions to help them improve."
-          />
-          <Accordion
-            question=" What subjects does Learnexo cover"
-            answer="Currently, Learnexo focuses on Mathematics, English, and Problem Solving. More subjects may be added in the future."
-          />
-          <Accordion
-            question=" How are the assessments structured"
-            answer="Learnexo assessments are multiple-choice tests designed to evaluate three key aspects: Conceptual Understanding: Testing knowledge of core concepts, Practical Application: Assessing how well students apply knowledge, Speed of Comprehension: Measuring how quickly students grasp new ideas."
-          />
-          <Accordion
-            question="How can I access Learnexo"
-            answer="Learnexo is accessible via a web platform or mobile app. Users can sign up, take assessments, and receive personalized recommendations."
-          />
-          <Accordion
-            question="Is Learnexo free to use"
-            answer="Learnexo offer both free and premium features. Basic assessments might be free, while advanced analytics, personalized tutoring, or premium content require a subscription."
-          />
-          <Accordion
-            question=" How does Learnexo help educators"
-            answer="Educators can use Learnexo to track students' progress, identify learning gaps, and customize their teaching methods based on AI-driven insights."
-          />
-          <Accordion
-            question="How can parents benefit from Learnexo"
-            answer="Parents can monitor their child’s academic performance, receive insights on strengths and weaknesses, and access personalized learning recommendations to support their child's education."
-          />
-          <Accordion
-            question="How secure is my data on Learnexo"
-            answer="Learnexo follows strict data security protocols to ensure users’ personal information and academic progress remain private and secure."
-          />
-          <Accordion
-            question="How can I get support if I have issues using Learnexo"
-            answer="If you encounter any issues, you can contact Learnexo’s support team via email or through the Help Center on the platform."
-          />
-          <Accordion
-            question=" Can I use Learnexo without an internet connection"
-            answer="Some features, like taking personalized tests, require an internet connection, but Learnexo offer offline access for downloaded learning materials."
-          />
-          <Accordion
-            question="What subscription plans does Learnexo offer"
-            answer="Learnexo offers three subscription plans to cater to different learning needs: Solo Plan – Designed for individual students who want personalized learning support. Family Plan – Ideal for families with multiple learners, allowing access for parents and children. School Plan – A comprehensive package for schools, enabling teachers to track student progress and manage learning resources for multiple students."
-          />
+          {faqData.map((faq) => (
+            <Accordion
+              key={faq.index}
+              question={faq.question}
+              answer={faq.answer}
+              open={openIndex === faq.index}
+              setOpen={() => handleAccordionToggle(faq.index)}
+            />
+          ))}
         </div>
       </div>
     </section>

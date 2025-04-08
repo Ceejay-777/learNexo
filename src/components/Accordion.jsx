@@ -1,12 +1,10 @@
 import React from "react";
 import down from "../assets/arrowDown.png";
 import { useRef } from "react";
-import { useState } from "react";
 
-const Accordion = ({ question, answer }) => {
-  const [open, setOpen] = useState(false);
+const Accordion = ({ question, answer, open, setOpen }) => {
   const answerRef = useRef(null);
-
+  
   return (
     <div
       onClick={() => setOpen(!open)}
