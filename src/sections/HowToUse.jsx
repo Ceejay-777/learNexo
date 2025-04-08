@@ -28,14 +28,14 @@ const data = [
 const HowToUse = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center px-4 md:px-16 py-12"
+      className="flex flex-col items-center justify-center px-4 md:px-8 py-6"
       id="howToUse"
     >
-      <h2 className="md:font-extrabold text-2xl md:text-4xl lg:text-[50px] font-bold text-center mb-12 max-w-[555px]">
+      <h2 className="md:font-extrabold text-2xl md:text-4xl lg:text-[50px] font-bold text-center mb-4 max-w-[555px]">
         HOW TO USE LEARNEXO
       </h2>
  
-      <div className="">
+      <div className="flex flex-col gap-4">
         {data.map((oneStep) => {
           const { image, index, step, info } = oneStep;
           return (
@@ -44,7 +44,7 @@ const HowToUse = () => {
               index={index}
               step={step}
               info={info}
-              reverse={index % 2 === 0}
+              // reverse={index % 2 === 0}
               key={index}
             />
           );

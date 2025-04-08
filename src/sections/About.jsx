@@ -4,11 +4,11 @@ import Metric from "../components/Metric";
 const About = () => {
   return (
     <section
-      className="w-screen px-4 sm:px-8 md:px-16 py-12 pb-24 bg-white border"
+      className="w-screen px-4 sm:px-8 md:px-16 py-12 bg-white border"
       id="about"
     >
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-24">
-        <h2 className="text-2xl sm:text-3xl md:4xl lg:text-[64px] font-bold md:font-semibold w-full leading-tight md:mt-12 text-center md:text-left">
+        <h2 className="text-2xl sm:text-3xl md:4xl lg:text-[64px] font-bold w-full leading-tight md:mt-12 text-center md:text-left">
           About us
         </h2>
         <div className="max-w-[655px]">
