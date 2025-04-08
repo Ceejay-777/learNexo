@@ -5,7 +5,7 @@ import Talk from "./Talk";
 
 const header = () => {
   return (
-    <header className="w-full flex justify-between relative items-center md:mb-10">
+    <header className="w-full flex justify-between relative items-center">
       <img
         src={logo}
         alt="learnexo"

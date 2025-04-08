@@ -4,7 +4,7 @@ import Metric from "../components/Metric";
 const About = () => {
   return (
     <section
-      className="w-screen px-4 sm:px-8 md:px-16 py-12 pb-24 bg-white"
+      className="w-screen px-4 sm:px-8 md:px-16 py-12 pb-24 bg-white border"
       id="about"
     >
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-24">
@@ -29,7 +29,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="">
+      {/* <div className="">
         <div className="h-[420px] flex gap-4 lg:gap-10 justify-between items-end border-b-[0.5px] border-b-[#B4B4B4] mb-2">
           <Metric perc={90} />
           <Metric perc={95} />
@@ -45,7 +45,7 @@ const About = () => {
           <p className="w-1/5">Improved Grades</p>
           <p className="w-1/5">Improved WAEC Results</p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
