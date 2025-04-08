@@ -8,7 +8,7 @@ const About = () => {
       id="about"
     >
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 lg:gap-24">
-        <h2 className="text-2xl sm:text-3xl md:4xl lg:text-[64px] font-bold md:font-semibold w-full leading-tight md:mt-12 text-center">
+        <h2 className="text-2xl sm:text-3xl md:4xl lg:text-[64px] font-bold md:font-semibold w-full leading-tight md:mt-12 text-center md:text-left">
           About us
         </h2>
         <div className="max-w-[655px]">
