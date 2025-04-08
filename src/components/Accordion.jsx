@@ -17,7 +17,7 @@ const Accordion = ({ question, answer }) => {
           open && "bg-white"
         }`}
       >
-        <p className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold">
+        <p className="text-xs sm:text-sm md:text-base lg:text-xl font-bold">
           {question}
         </p>
         <img
@@ -37,7 +37,7 @@ const Accordion = ({ question, answer }) => {
         }`}
         ref={answerRef}
       >
-        <div className="p-4 text-sm sm:text-base md:text-xl lg:text-2xl">
+        <div className="p-4 text-xs sm:text-sm md:text-base lg:text-xl">
           {answer}
         </div>
       </div>
